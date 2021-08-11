@@ -1,5 +1,7 @@
 import React, {Component, Fragment}from 'react';
-import './Header.css'
+import './Header.css';
+
+
 class Header extends Component {
     constructor(props){
         super(props)
@@ -13,11 +15,11 @@ class Header extends Component {
     render(){
         return(
             <Fragment>
-                <header>
-                    <div>{this.state.title}</div>
+                <header className='header'>
+                    <div className='logo'>{this.state.title}</div>
                     <center>
                         <input/>
-                        <div style={{color:'red',fontSize:20}}>{this.state.userText}</div>
+                        <div style={{color:'white',fontSize:20}}>{this.state.userText}</div>
                     </center>
                 </header>
                 <hr/>
